@@ -1,31 +1,55 @@
 {
-  "lastUpdated": "2026-05-29T22:45:00+08:00",
+  "lastUpdated": "2026-05-29T23:30:00+08:00",
   "days": [
     {
       "date": "2026-05-29",
       "topics": [
         {
-          "id": "2026-05-29-gpt55-default-shuffle",
-          "title": "GPT-5.5 與五月預設模型大洗牌",
+          "id": "2026-05-29-claude-opus-48",
+          "title": "Anthropic 發布 Claude Opus 4.8,估值衝上 9,650 億美元",
           "category": "模型發布",
-          "summary": "OpenAI GPT-5.5 於 4 月底登場;進入五月,各平台預設模型出現連鎖更換——GitHub 改用 GPT-5.3-Codex、Google Gemini App 改以 Gemini 3.5 Flash 為預設。本月主旋律是「精修既有家族 + 平台層級換預設」,而非全新前沿模型。",
-          "detail": "GPT-5.5 於 2026 年 4 月 23 日推出。根據模型發布追蹤資料,它在 SWE-Bench Verified 上拿下 88.7% 的分數(指數 101.3),些微領先 Opus 4.7 的基準,定位在程式撰寫與日常推理。\n\n值得開發者注意的是它的「長上下文加價」收費結構:基礎價為每百萬 token 輸入 5 美元、輸出 30 美元;但只要單一提示的輸入超過 272K token,整個工作階段(session)的輸入會以 2 倍、輸出以 1.5 倍計價。換句話說,一旦觸發長上下文,整次任務的有效成本可能直接翻倍(範例中從 1.10 美元升到 2.20 美元),是容易被忽略的隱藏成本。\n\n進入五月,真正的變化發生在「預設模型」層級而非全新旗艦:GitHub Business/Enterprise 於 5 月 17 日把預設改為 GPT-5.3-Codex;Google 的 Gemini App 則於 5 月 19 日把預設換成輕量高速的 Gemini 3.5 Flash。整體來看,2026 年五月各家以精修既有模型家族、調整定價與平台預設為主,前沿級的全新模型反而按兵不動。",
-          "tags": ["OpenAI", "GPT-5.5", "預設模型", "定價"],
+          "summary": "Anthropic 於 5/28 推出新前沿模型 Claude Opus 4.8,距 Opus 4.7 僅 42 天;同期完成 650 億美元募資,估值達 9,650 億美元,年化營收約 470 億美元。",
+          "detail": "Anthropic 在 2026 年 5 月 28 日發布 Claude Opus 4.8,成為當前的旗艦前沿模型,距離 Opus 4.7 僅相隔 42 天。官方形容 Opus 4.8 具備「更敏銳的判斷力、對自身進度更誠實,以及比前代更長時間獨立工作的能力」。\n在商業面,Anthropic 完成 650 億美元私募募資,估值一舉推升到 9,650 億美元,並公布年化營收約 470 億美元,顯示 Claude 需求爆發。\n產品上,Claude Managed Agents 現可在你掌控的沙箱中運作並連接私有 MCP 伺服器;另推出 Claude for Small Business,把連接器與現成工作流帶進小型企業常用的工具中。",
+          "tags": ["Anthropic", "Claude Opus 4.8", "估值", "MCP"],
           "sources": [
-            { "title": "AI Model Releases May 2026 Tracker — Digital Applied", "url": "https://www.digitalapplied.com/blog/ai-model-releases-may-2026-complete-tracker" },
-            { "title": "AI Updates Today (May 2026) — LLM-Stats", "url": "https://llm-stats.com/llm-updates" }
+            { "title": "Anthropic upgrades Claude with new Opus 4.8 — 9to5Mac", "url": "https://9to5mac.com/2026/05/28/anthropic-upgrades-claude-with-new-opus-4-8-model-heres-whats-new/" },
+            { "title": "Anthropic Vaults to $965B Valuation — U.S. News", "url": "https://www.usnews.com/news/technology/articles/2026-05-28/anthropic-vaults-to-a-965-billion-valuation-with-new-funding-as-claude-demand-surges" }
           ]
         },
         {
-          "id": "2026-05-29-google-io-2026",
-          "title": "Google I/O 2026:Gemini 3.5 Flash 上線、Spark 支援 MCP",
+          "id": "2026-05-29-gpt55-default-shuffle",
+          "title": "GPT-5.5 與五月預設模型大洗牌",
           "category": "模型發布",
-          "summary": "Google I/O 2026 於 5/19 主題演講登場,聚焦 Gemini 家族:輕量高速的 Gemini 3.5 Flash 於 5/25 正式上線並接入 Adobe、Canva、CapCut;Gemini Spark 將支援 MCP 串接第三方 App,並預覽 Android XR 眼鏡。",
-          "detail": "Google I/O 2026 的主題演講於 5 月 19 日舉行,5 月 20 日為開發者技術場次。會中預期在 keynote 發表 Gemini 4.0(細節著墨不多),但真正落地的重點是 Gemini 家族的輕量版本與生態整合。\n\nGemini 3.5 Flash 於 5 月 25 日正式上線(GA),定價為每百萬 token 輸入 1.50 美元、輸出 9 美元,主打速度與低成本推論;同時宣布 Adobe、Canva、CapCut 等夥伴將整合 Gemini。\n\nGemini Spark 方面,Google 表示將在數週內支援 MCP(Model Context Protocol),讓第三方 App 能串接;Canva 的 Magic Layers 整合已進入 beta。此外還預覽了 Android XR 智慧眼鏡,並預告 Aluminium OS 的細節。整體方向延續 Google 在多模態、端到端整合與開放協定(MCP)上的布局。",
-          "tags": ["Google", "Gemini 3.5 Flash", "MCP", "Android XR"],
+          "summary": "OpenAI GPT-5.5 於 4 月底登場;進入五月,各平台預設模型出現連鎖更換——GitHub 改用 GPT-5.3-Codex、Google Gemini App 改以 Gemini 3.5 Flash 為預設。本月主旋律是「精修既有家族 + 平台層級換預設」。",
+          "detail": "GPT-5.5 於 2026 年 4 月 23 日推出。根據模型發布追蹤資料,它在 SWE-Bench Verified 上拿下 88.7% 的分數(指數 101.3),些微領先 Opus 4.7 的基準,定位在程式撰寫與日常推理。\n值得開發者注意的是它的「長上下文加價」收費結構:基礎價為每百萬 token 輸入 5 美元、輸出 30 美元;但只要單一提示的輸入超過 272K token,整個工作階段(session)的輸入會以 2 倍、輸出以 1.5 倍計價。換句話說,一旦觸發長上下文,整次任務的有效成本可能直接翻倍。\n進入五月,真正的變化發生在「預設模型」層級而非全新旗艦:GitHub Business/Enterprise 於 5 月 17 日把預設改為 GPT-5.3-Codex;Google 的 Gemini App 則於 5 月 19 日把預設換成輕量高速的 Gemini 3.5 Flash。",
+          "tags": ["OpenAI", "GPT-5.5", "預設模型", "定價"],
           "sources": [
-            { "title": "AI News May 2026 — AIToolsRecap", "url": "https://aitoolsrecap.com/Blog/MayNews2026.aspx" },
-            { "title": "New AI Models May 2026 — WhatLLM", "url": "https://whatllm.org/blog/new-ai-models-may-2026" }
+            { "title": "AI Model Releases May 2026 Tracker — Digital Applied", "url": "https://www.digitalapplied.com/blog/ai-model-releases-may-2026-complete-tracker" },
+            { "title": "GPT-5.5 Instant — OpenAI", "url": "https://openai.com/index/gpt-5-5-instant/" }
+          ]
+        },
+        {
+          "id": "2026-05-29-google-io-gemini35",
+          "title": "Google I/O 2026:Gemini 3.5 Flash「兼具智慧與行動」,Ultra 降價",
+          "category": "模型發布",
+          "summary": "Google I/O 2026(5/19)推出 Gemini 3.5 家族,主打「前沿智慧 + 行動力」。3.5 Flash 在程式與代理基準上勝過 3.1 Pro、輸出速度快 4 倍;Ultra 訂閱由月費 250 降到 200 美元,並新增 100 美元的開發者方案。Gemini 月活躍用戶達 9 億。",
+          "detail": "Google 在 I/O 2026 推出 Gemini 3.5 系列,定位為「結合前沿智慧與行動(action)」的模型家族,首發為 3.5 Flash,主打代理與程式撰寫,擅長能帶來實際效用的長程(long-horizon)複雜任務。\n效能上,Gemini 3.5 Flash 在高難度的程式與代理基準上勝過 Gemini 3.1 Pro,並在多模態理解領先;以每秒輸出 token 計,速度約為其他前沿模型的 4 倍。\n定價與生態同步調整:Ultra 訂閱由每月 250 美元降至 200 美元,新增每月 100 美元、面向工程師與專業使用者的 Developer 方案;Gemini 月活躍用戶達到 9 億,較 2025 年 5 月的 4 億翻倍。DeepMind 也以 8,000 萬至 9,000 萬美元的授權協議,招攬了 20 多位 Contextual AI 研究員。",
+          "tags": ["Google", "Gemini 3.5 Flash", "降價", "DeepMind"],
+          "sources": [
+            { "title": "Gemini 3.5: frontier intelligence with action — Google", "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/" },
+            { "title": "Google I/O 2026: Cheaper Gemini, DeepMind Talent — HeyGoTrade", "url": "https://www.heygotrade.com/en/news/google-io-2026-gemini-deepmind-contextual-ai/" }
+          ]
+        },
+        {
+          "id": "2026-05-29-china-ai-models",
+          "title": "中國 AI 模型爆發:DeepSeek V4、Kimi K2.6、Qwen 3.6",
+          "category": "模型發布",
+          "summary": "中國開源/開放權重模型在 2026 第二季進入爆發期:DeepSeek 推出 V4 系列(含 1.6 兆參數的 V4-Pro,1M 上下文,MIT 授權);Kimi K2.6 成為首個在 SWE-Bench Pro 上勝過 GPT-5.4 的開放權重模型。",
+          "detail": "中國 AI 生態在 2026 年第二季快速加速。DeepSeek 於 4 月 24 日釋出 V4 系列預覽,包含 1.6 兆參數的 DeepSeek-V4-Pro 與 2,840 億參數的 V4-Flash,兩者皆具 100 萬 token 上下文,採 MIT 授權;華為、寒武紀等晶片商已採用其 V4 模型。\nKimi K2.6(4 月 20 日發布)成為首個在 SWE-Bench Pro 上擊敗 GPT-5.4(xhigh)的開放權重模型。Qwen 方面,截至五月最新公開版本為 Qwen 3.6(Plus 版具 1M 上下文),Qwen 4 預期落在第三/四季。整體呈現多家在能力與價格上激烈競爭、且大量採開放權重的格局。",
+          "tags": ["DeepSeek V4", "Kimi K2.6", "Qwen", "開放權重"],
+          "sources": [
+            { "title": "Top China-Built AI Models 2026 — RadarAI", "url": "https://radarai.top/en/articles/china-ai-models-to-watch-in-2026-deepseek-qwen-kimi-and-more" },
+            { "title": "Best Chinese AI Models 2026 — TokenMix", "url": "https://tokenmix.ai/blog/best-chinese-ai-models-2026-comparison-guide" }
           ]
         },
         {
@@ -33,7 +57,7 @@
           "title": "SubQ 1M-Preview:首個商用次二次方 LLM,12M token 上下文",
           "category": "架構創新",
           "summary": "新創 Subquadratic 於 5/5 推出首個商用「次二次方(subquadratic)」架構大型語言模型 SubQ,原生支援 1,200 萬 token 上下文,試圖突破 Transformer 注意力 O(n²) 的運算瓶頸。",
-          "detail": "Subquadratic 公司於 2026 年 5 月 5 日推出 SubQ,並完成 2,900 萬美元種子輪募資。它號稱是第一個商用、採「次二次方稀疏注意力(subquadratic sparse attention)」而非標準 Transformer 的大型語言模型——重點在於標準 Transformer 的注意力運算量是上下文長度的 O(n²),長上下文時成本急速攀升。\n\n規格上,SubQ 原生支援 1,200 萬 token 的上下文視窗;官方宣稱在長上下文任務上成本約為前沿模型的 1/5,注意力在大規模時最高可快 52 倍。不過這些都是廠商自家數字,尚未經第三方在 MRCR、RULER 等標準基準上獨立驗證。\n\n產品包含 API 以及 SubQ Code(可利用完整上下文的全 repo 程式代理),主打 repo 級程式碼分析、長文件處理與多文件研究。技術上,它延續了 Mamba、RWKV、Hyena、BASED 等先前曾在對抗前沿 Transformer 時遇到瓶頸的研究路線,因此「能否真正商用站穩」會是後續最關鍵的觀察點。",
+          "detail": "Subquadratic 公司於 2026 年 5 月 5 日推出 SubQ,並完成 2,900 萬美元種子輪募資。它號稱是第一個商用、採「次二次方稀疏注意力(subquadratic sparse attention)」而非標準 Transformer 的大型語言模型——重點在於標準 Transformer 的注意力運算量是上下文長度的 O(n²),長上下文時成本急速攀升。\n規格上,SubQ 原生支援 1,200 萬 token 的上下文視窗;官方宣稱在長上下文任務上成本約為前沿模型的 1/5,注意力在大規模時最高可快 52 倍。不過這些都是廠商自家數字,尚未經第三方在 MRCR、RULER 等標準基準上獨立驗證。\n產品包含 API 以及 SubQ Code(可利用完整上下文的全 repo 程式代理)。技術上延續 Mamba、RWKV、Hyena、BASED 等研究路線,「能否真正商用站穩」會是後續最關鍵的觀察點。",
           "tags": ["架構", "長上下文", "Subquadratic", "稀疏注意力"],
           "sources": [
             { "title": "New AI Models May 2026 — WhatLLM", "url": "https://whatllm.org/blog/new-ai-models-may-2026" },
@@ -41,11 +65,155 @@
           ]
         },
         {
+          "id": "2026-05-29-reasoning-research",
+          "title": "推理研究突破:視覺基元思考、Gemma 4 與神經符號 AI",
+          "category": "研究突破",
+          "summary": "五月推理研究熱絡:DeepSeek「Thinking with Visual Primitives」框架爆紅;Google 開源 Gemma 4 主打高「每參數智慧」與代理推理;另有以演化策略(ES)取代梯度微調、以及神經符號結合的進展。",
+          "detail": "多模態推理是本月研究焦點。DeepSeek-AI 於 4 月 30 日發表、5 月 4 日大量擴散的「Thinking with Visual Primitives(以視覺基元思考)」框架,讓模型在影像層面進行推理。\nGoogle 於 5 月 4 日開源 Gemma 4 家族,專為進階推理與代理工作流設計,以高「intelligence-per-parameter(每參數智慧)」挑戰體積大得多的閉源模型。\n方法學上,有研究評估「演化策略(Evolution Strategies, ES)」在數學、ARC-AGI、數獨等複雜推理任務的表現,顯示這類免梯度方法可作為微調大型模型的實用、可擴展替代;Tufts 大學則發展神經符號 AI,把神經網路與符號推理結合、將問題拆成步驟與類別。另有研究宣稱在提升準確度的同時把能耗降低 100 倍。",
+          "tags": ["推理", "Gemma 4", "神經符號", "演化策略"],
+          "sources": [
+            { "title": "AI Research Updates May 2026 — Cognizant AI Lab", "url": "https://www.cognizant.com/us/en/ai-lab/blog/ai-research-updates-may-2026" },
+            { "title": "AI breakthrough cuts energy use 100x — ScienceDaily", "url": "https://www.sciencedaily.com/releases/2026/04/260405003952.htm" }
+          ]
+        },
+        {
+          "id": "2026-05-29-ai-video-generation",
+          "title": "AI 影片生成大戰:Veo 3.1、Kling 3.0 稱霸,Sora 2 退場",
+          "category": "影音生成",
+          "summary": "2026 影片生成由 Google Veo 3.1 與 Kling 3.0 領軍:Veo 3.1 原生 4K/60fps、單次生成同步音訊;Kling 3.0 主打多鏡頭分鏡與低價。OpenAI 則宣布 Sora 2 的 Web/App 於 4/26 下線、API 於 9/24 終止。",
+          "detail": "對影片創作者而言,Google Veo 3.1 與 Kling 3.0 已是畫質天花板。Veo 3.1 被視為 2026 最先進的影片模型,能單次生成 3840×2160 真 4K、最高 60fps 並同步音訊,綜合最穩;Kling 3.0 在電影級光影與複雜運動上不相上下,並提供業界最乾淨的多鏡頭分鏡——一段提示就能生成具連續性的四個鏡頭。\n價格方面,Sora 2 每秒約 0.75 美元、Veo 3.1 快速模式每秒起 0.15 美元、Kling 3.0 約每秒 0.10 美元。值得注意的是,OpenAI 已於 3 月宣布 Sora 2 的網頁與 App 體驗在 4 月 26 日停止、API 於 9 月 24 日終止,等於把消費級影片生成的戰場讓給 Google 與快手等對手。",
+          "tags": ["Veo 3.1", "Kling 3.0", "Sora 2", "影片生成"],
+          "sources": [
+            { "title": "Best AI Video Generators 2026 — AI/ML API", "url": "https://aimlapi.com/blog/best-ai-video-generators-2026-veo-3-1-kling-sora-2-seedance-more-compared" },
+            { "title": "Kling, Runway, Vidu set to replace Sora — Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-04-01/kling-ai-runway-vidu-the-ai-video-generators-set-to-replace-openai-s-sora" }
+          ]
+        },
+        {
+          "id": "2026-05-29-nano-banana-2",
+          "title": "Google Nano Banana 2 影像模型與 Google Pics 平台",
+          "category": "影音生成",
+          "summary": "Google 推出 Nano Banana 2(技術上為 Gemini 3.1 Flash Image),結合 Nano Banana Pro 的能力與 Flash 的速度,能藉網路搜尋的即時資訊精準描繪特定主體;I/O 上更發表以其為核心的 Google Pics 平台。",
+          "detail": "Google DeepMind 推出 Nano Banana 2(技術上即 Gemini 3.1 Flash Image),把 Nano Banana Pro 的進階能力與 Gemini Flash 的速度結合,能生成比前代更逼真的影像。\n它會從 Gemini 的真實世界知識庫取材,並由網路搜尋的即時資訊與影像驅動,更精準地描繪特定主體;這種深度理解也有助於製作資訊圖表、把筆記轉成圖解、生成資料視覺化。模型已可透過 Google AI Studio 的 Gemini API、Vertex AI(企業部署)、以及 Google Antigravity 與 Firebase 使用。在 5 月 I/O keynote,Google 還發表了以 Nano Banana 驅動、隸屬 Workspace 的影像生成平台 Google Pics。",
+          "tags": ["Nano Banana 2", "影像生成", "Google Pics", "Gemini"],
+          "sources": [
+            { "title": "Nano Banana 2 — Google", "url": "https://blog.google/innovation-and-ai/technology/ai/nano-banana-2/" },
+            { "title": "Build with Nano Banana 2 — Google", "url": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-nano-banana-2/" }
+          ]
+        },
+        {
+          "id": "2026-05-29-nvidia-rubin",
+          "title": "Nvidia 推 Rubin 平台,資料中心單季營收 752 億美元",
+          "category": "硬體晶片",
+          "summary": "Nvidia 發表由六款新晶片組成的 Rubin 平台,推論 token 成本較 Blackwell 最高降 10 倍,AWS、Google Cloud、Azure、Oracle 都將部署;資料中心單季(至 4 月)營收創 752 億美元紀錄。",
+          "detail": "Nvidia 公布 Rubin 平台,由六款新晶片組成,宣稱推論 token 成本相較 Blackwell 平台最高可降低 10 倍,AWS、Google Cloud、Microsoft Azure、Oracle Cloud 等雲端業者都規劃部署 Vera Rubin 實例。同時推出 BlueField-4 資料處理器,驅動名為「Inference Context Memory Storage Platform」的 AI 原生儲存基礎設施。\n現役的 Blackwell Ultra 相較 Hopper,在代理式 AI 上效能最高提升 50 倍、成本降低 35 倍。財務面,Nvidia 資料中心在截至 4 月的單季營收達創紀錄的 752 億美元,並把營運重組為 Data Center 與 Edge Computing 兩大平台,資料中心再細分 Hyperscale 與 ACIE 子市場。",
+          "tags": ["Nvidia", "Rubin", "Blackwell", "資料中心"],
+          "sources": [
+            { "title": "NVIDIA Q1 FY2027 8-K — SEC", "url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000051/q1fy27pr.htm" },
+            { "title": "National Robotics Week / Physical AI — NVIDIA Blog", "url": "https://blogs.nvidia.com/blog/national-robotics-week-2026/" }
+          ]
+        },
+        {
+          "id": "2026-05-29-enterprise-agents",
+          "title": "企業 Agent 大爆發:Nvidia Agent Toolkit、SAP、Snowflake",
+          "category": "企業應用",
+          "summary": "企業代理進入「從試點到生產」之年:Nvidia 在 GTC 2026 推 Agent Toolkit(Adobe、Salesforce、SAP 等 17 家採用);SAP 發表「自主企業」與 50+ Joule 代理;Snowflake 與 AWS 簽 60 億美元協議。採用率達 72%,但仍有 60% 治理缺口。",
+          "detail": "2026 被分析機構(Gartner、Forrester、IDC)一致視為企業 AI 代理「從試點走向生產」的一年,落地採用率達 72%,但仍存在約 60% 的治理缺口。\nNvidia 在 GTC 2026 推出 Agent Toolkit,Adobe、Salesforce、SAP 等共 17 家採用;Nvidia 認為「AI 代理的時代」會比「AI 模型的時代」更大,意圖掌握這層平台。SAP 於 Sapphire 2026 揭示「自主企業(Autonomous Enterprise)」,核心是 SAP Autonomous Suite——在財務、供應鏈、採購、HR、客服等部署 50 多個領域專屬的 Joule AI 助理,讓代理不只是輔助、而是直接執行業務流程。Snowflake 則與 AWS 簽下多年策略合作,承諾 60 億美元基礎設施投入以加速企業代理採用。",
+          "tags": ["企業 Agent", "Nvidia", "SAP", "Snowflake"],
+          "sources": [
+            { "title": "Nvidia launches enterprise AI agent platform — VentureBeat", "url": "https://venturebeat.com/technology/nvidia-launches-enterprise-ai-agent-platform-with-adobe-salesforce-sap-among" },
+            { "title": "Snowflake $6B AWS commitment — Snowflake", "url": "https://www.snowflake.com/en/news/press-releases/snowflake-expands-aws-collaboration-with-6b-commitment-to-accelerate-enterprise-agentic-ai-adoption/" }
+          ]
+        },
+        {
+          "id": "2026-05-29-openai-enterprise",
+          "title": "OpenAI 企業布局:Deployment Company、ChatGPT 理財、治理框架",
+          "category": "企業應用",
+          "summary": "OpenAI 五月密集出招:成立 OpenAI Deployment Company(收購 Tomoro)協助企業導入、ChatGPT 推美國 Pro 用戶的個人理財預覽、發布 Frontier Governance Framework,並與 Dell 合作把 Codex 帶進混合與地端環境。",
+          "detail": "OpenAI 在五月加速企業化:5 月 11 日成立 OpenAI Deployment Company,並收購 Tomoro,讓新公司一開始就具備經驗豐富的 Forward Deployed Engineers,協助組織在關鍵業務上建置與部署 AI;企業現已佔 OpenAI 營收逾 40%,預計年底與消費端打平。\n產品面,5 月 15 日為美國 Pro 用戶推出 ChatGPT 個人理財體驗預覽,可安全連結金融帳戶、檢視支出儀表板並就財務情境提問。治理面,5 月 29 日發布 Frontier Governance Framework。此外,5 月 19 日與 Dell 合作把 Codex 帶進混合雲與地端企業環境,Codex 本身也在 5 月 14 日獲得更豐富的 TUI、@mention 搜尋、Python SDK 與 codex doctor 診斷等更新。",
+          "tags": ["OpenAI", "Deployment Company", "ChatGPT", "Codex"],
+          "sources": [
+            { "title": "OpenAI launches the Deployment Company — OpenAI", "url": "https://openai.com/index/openai-launches-the-deployment-company/" },
+            { "title": "The next phase of enterprise AI — OpenAI", "url": "https://openai.com/index/next-phase-of-enterprise-ai/" }
+          ]
+        },
+        {
+          "id": "2026-05-29-humanoid-robots",
+          "title": "人形機器人落地:Figure 02 進 BMW 產線、Schaeffler 簽約",
+          "category": "機器人",
+          "summary": "五月一波合約與實地部署確認人形機器人進入真實產線:Figure 02 在 BMW 斯帕坦堡廠輪班作業;英國 Humanoid 與汽車供應商 Schaeffler 簽約,2032 前部署 1,000–2,000 台;日本航空在羽田測試。物理 AI 市場估 2032 年逾 150 億美元。",
+          "detail": "2026 年五月,一連串具約束力的合約與實地部署,確認人形機器人正進入汽車、航空、物流等真實生產環境。Figure AI 的兩台 Figure 02 在 BMW 南卡斯帕坦堡廠的運作產線上,以每週五天、每天 10 小時輪班作業;5 月 13 日英國 AI 機器人公司 Humanoid 與全球最大汽車供應商之一 Schaeffler 簽訂分階段部署協議,目標 2032 年前在其全球廠區布署 1,000 至 2,000 台輪式人形機器人;日本航空則在羽田機場測試行李處理、運輸與客艙清潔。\n市場與技術同步推進:全球物理 AI 市場預估從 2026 年的 15 億美元成長到 2032 年逾 150 億美元(年複合成長率 47.2%);Unitree 在 2025 年出貨逾 5,500 台,均價從 2023 年約 8.5 萬美元降到 2025 年的 2.5 萬美元。技術上,4 月的 pi-0.7 模型能完成未受訓的任務(例如操作訓練資料中只見過兩次的氣炸鍋),EgoScale 論文則首度提供「機器人基礎模型遵循與 LLM 相同資料驅動擴展律」的有力證據。電池續航、可靠度、安全標準與成本仍是主要障礙。",
+          "tags": ["人形機器人", "Figure AI", "物理 AI", "Unitree"],
+          "sources": [
+            { "title": "Physical AI Sends Humanoids to Factory Floors — Memeburn", "url": "https://memeburn.com/physical-ai-is-sending-humanoid-robots-to-real-factory-floors-in-2026/" },
+            { "title": "NVIDIA Releases New Physical AI Models — NVIDIA", "url": "https://nvidianews.nvidia.com/news/nvidia-releases-new-physical-ai-models-as-global-partners-unveil-next-generation-robots" }
+          ]
+        },
+        {
+          "id": "2026-05-29-ai-drug-discovery",
+          "title": "AI 製藥:Eli Lilly 建 LillyPod 超算、簽 Insilico 27.5 億美元合作",
+          "category": "醫療科學",
+          "summary": "Eli Lilly 啟用全球首座以 NVIDIA DGX B300 打造的製藥 AI 超級電腦 LillyPod,並與香港 Insilico Medicine 簽下最高 27.5 億美元協議,取得其生成式 AI 平台 Pharma.AI 所發現臨床前候選藥的全球開發權。",
+          "detail": "AI 製藥從「興奮期」走向「建造期」。Eli Lilly 啟用 LillyPod——全球首座採用 NVIDIA DGX B300 系統的 DGX SuperPOD 製藥 AI 超級電腦,用於大規模加速藥物探索、基因體學與臨床開發;同時與香港的 AI 製藥商 Insilico Medicine 簽下最高 27.5 億美元的里程碑協議,取得以其生成式 AI 平台 Pharma.AI 發現之臨床前候選藥的全球獨家開發與商業化權利。\n市場面,AI 藥物探索產值預估由 2025 年約 50–70 億美元成長到 2026 年的 80–100 億美元,80% 組織計畫在未來一年增加 AI 預算。2025 年已有半數採用 AI 的生技公司獲得更快的 time-to-target,顯示初期研究的生產力確有提升。",
+          "tags": ["Eli Lilly", "Insilico", "藥物探索", "DGX"],
+          "sources": [
+            { "title": "AI in Drug Discovery Research Report 2026 — GlobeNewswire", "url": "https://www.globenewswire.com/news-release/2026/05/08/3290907/28124/en/AI-in-Drug-Discovery-Research-Report-2026-Global-Market-Analysis-Competitive-Landscape-Opportunities-and-Forecasts-2021-2025-2025-2031.html" },
+            { "title": "How AI is reshaping drug discovery — WEF", "url": "https://www.weforum.org/stories/2026/01/how-ai-is-reshaping-drug-discovery/" }
+          ]
+        },
+        {
+          "id": "2026-05-29-ai-funding",
+          "title": "AI 募資狂潮:Q1 創 3,000 億美元紀錄,Amazon 加碼 Anthropic",
+          "category": "募資併購",
+          "summary": "2026 第一季創投投入飆破 3,000 億美元、由 AI 帶動。Amazon 再投 Anthropic 50 億美元(未來上看 200 億);Shield AI 募 15 億美元(估值 127 億);Hark A 輪 7 億美元,Nvidia、Intel、AMD、Qualcomm 同台押注。",
+          "detail": "AI 推動 2026 第一季全球創投投資突破 3,000 億美元、刷新紀錄。資金明顯流向前沿研究團隊、代理基礎設施、國防軟體,以及受管制產業的垂直工具。\n代表性交易包括:Amazon 再對 Anthropic 投資 50 億美元(未來上看追加 200 億);國防 AI 的 Shield AI 完成 15 億美元 G 輪、估值 127 億美元(一年內漲 140%);新創 Hark 拿下 7 億美元 A 輪,由 Parkway 領投,Nvidia、Intel Capital、AMD、Qualcomm Ventures 等晶片巨頭參與。\n投資偏好轉向「能在組織內、具監督與稽核軌跡運作的企業級代理」、有真實部署的實體 AI,以及服務 AI 建造者的基礎設施;A 輪也更要求營收而非只有亮眼 demo。",
+          "tags": ["創投", "Anthropic", "Shield AI", "募資"],
+          "sources": [
+            { "title": "Q1 2026 Venture Funding Records $300B — Crunchbase", "url": "https://news.crunchbase.com/venture/record-breaking-funding-ai-global-q1-2026/" },
+            { "title": "AI Funding in 2026: Where VC Is Going — The AI Insider", "url": "https://theaiinsider.tech/2026/05/27/ai-funding-in-2026-where-venture-capital-is-going/" }
+          ]
+        },
+        {
+          "id": "2026-05-29-ai-regulation",
+          "title": "AI 法規:歐盟 AI Act omnibus 放寬時程、美國以州法為主",
+          "category": "法規政策",
+          "summary": "歐盟 5/7 就「AI omnibus」達成政治協議,把高風險系統義務從 2026/8 延後至 2027/12,並新增禁止生成非自願私密影像與 CSAM;AI Act 仍於 2026/8/2 全面適用。美國聯邦走「創新優先」,實質規範主要由各州推動。",
+          "detail": "歐盟於 2026 年 5 月 7 日就「AI omnibus」修法達成政治協議以簡化 AI Act 實施:Annex III 的高風險系統義務由 2026 年 8 月 2 日延後至 2027 年 12 月 2 日(延 16 個月);成員國設立監理沙盒的義務延至 2027 年 8 月。同時新增兩項禁止行為——以 AI 生成或操作非自願私密影像,以及兒童性虐待材料(CSAM)。AI Act 仍將於 2026 年 8 月 2 日全面適用,部分受管制產品中的高風險系統享有至 2028 年 8 月的過渡期。\n美國方面,自 2025 年川普第二任期起,聯邦政策強調「創新優先」,實質可執行的規範主要由各州推動;川普 12 月的行政命令要求司法部挑戰與「最低負擔的全國政策框架」相牴觸的州法。科羅拉多州的《Colorado AI Act》是最全面的州法,於 2026 年 2 月生效。",
+          "tags": ["歐盟 AI Act", "法規", "美國州法", "合規"],
+          "sources": [
+            { "title": "EU AI Act Update: Timeline Relief — Global Policy Watch", "url": "https://www.globalpolicywatch.com/2026/05/eu-ai-act-update-timeline-relief-targeted-simplification-and-new-prohibitions/" },
+            { "title": "US Companies Face EU AI Act August 2026 Deadline — Holland & Knight", "url": "https://www.hklaw.com/en/insights/publications/2026/04/us-companies-face-eu-ai-acts-possible-august-2026-compliance-deadline" }
+          ]
+        },
+        {
+          "id": "2026-05-29-assistant-wars",
+          "title": "助理之戰:Microsoft Copilot 全面進攻,Apple Siri 延宕",
+          "category": "產業動態",
+          "summary": "Microsoft 五月強推 Copilot:Copilot Studio 的「電腦操作代理」正式上線、推出 Copilot Cowork(可在手機委派工作),並把 Copilot 帶上 Mac 直攻 Siri。Apple 則坦承 LLM 版 Siri 一再延期,改走更多端側模型路線。",
+          "detail": "Microsoft 在五月全面進攻 AI 助理:Copilot Studio 的「電腦操作代理(computer-using agents)」正式上線(GA),並推出重新設計、以統一畫布建構代理自動化的工作流體驗;Copilot Cowork 登上 iOS 與 Android,讓使用者在通勤、會議空檔或離開座位時委派工作,並把 Copilot App 帶到 Mac,直接叫陣 Siri 與 Alexa。\nApple 則公開承認原訂的 Siri 改進「比預期更久」,2024 年宣布的功能多次延後才在 2026 年到位;新一代 LLM 版 Siri 預計 2026 年初推出,將啟用 app intent 系統做情境化與主動操作。一旦 Siri 重建為 LLM 助理,Apple 可能推出代號「Knowledge」的聊天機器人,並打造更具對話力、常駐式的 Siri;整體策略也明顯轉向更多端側(on-device)模型。",
+          "tags": ["Microsoft Copilot", "Apple Siri", "AI 助理", "端側"],
+          "sources": [
+            { "title": "Copilot Cowork — Microsoft 365 Blog", "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/05/05/copilot-cowork-from-conversation-to-action-across-skills-integrations-and-devices/" },
+            { "title": "Apple's AI ambitions beyond Siri — AppleInsider", "url": "https://appleinsider.com/articles/25/06/12/apples-ai-ambitions-go-beyond-siri-llm-with-knowledge-chatbot-and-always-on-ai-copilot" }
+          ]
+        },
+        {
+          "id": "2026-05-29-coding-cli-updates",
+          "title": "編碼 CLI 五月更新:Claude Code /goal、Codex 強化與行動化",
+          "category": "工具更新",
+          "summary": "Claude Code(v2.1.128–2.1.141)新增跨回合完成條件的 /goal、agent view、從 .zip 與 URL 載入外掛、Ctrl+R 全域歷史搜尋;Codex 則加入更豐富 TUI、@mention 搜尋、Python SDK、codex doctor 與遠端工作流,並推進瀏覽器與行動版。",
+          "detail": "五月各家編碼 CLI 持續快速迭代。Claude Code 在 v2.1.128–2.1.141 一系列版本中,新增了用於跨回合(cross-turn)完成條件的 /goal 指令、agent view 介面、可從 .zip 壓縮檔與 URL 載入外掛、Ctrl+R 全域歷史搜尋,並擴大 MCP 與 hook 的處理能力。\nCodex 在 5 月 14 日的更新加入更豐富的 TUI 控制、改進的 @mention 搜尋、擴充的外掛與遠端工作流、翻新的 Python SDK 與 codex doctor 診斷,並在可靠度與沙箱上改進;同時把代理式編碼延伸到瀏覽器(Chrome 擴充)與行動裝置(Codex on Mobile 預覽)。開源陣營也熱鬧,如 OpenCode 主打 75+ 模型供應商、LSP 整合、可平行跑多代理與隱私優先。",
+          "tags": ["Claude Code", "Codex", "CLI", "OpenCode"],
+          "sources": [
+            { "title": "Open Source Toolkit for Building AI Agents in 2026 — DEV", "url": "https://dev.to/anmolbaranwal/open-source-toolkit-for-building-ai-agents-in-2026-55h1" },
+            { "title": "OpenAI Release Notes — Releasebot", "url": "https://releasebot.io/updates/openai" }
+          ]
+        },
+        {
           "id": "2026-05-29-prompt-engineering-2026",
           "title": "2026 提示工程實戰:結構化提示、壓縮與安全防護",
           "category": "技巧",
           "summary": "2026 的提示工程強調結構化建構(系統訊息+指令+情境+範例+輸出限制+分隔符)、思維鏈,以及進階的提示壓縮、輸出錨定與防注入防護;不同模型也有各自偏好的格式。",
-          "detail": "結構化建構是核心:一則好提示通常包含系統訊息(設定角色與語氣)、明確指令、背景情境、few-shot 範例、輸出限制(格式/長度/結構),以及清楚的分隔符。具體、可量化的要求(例如「用 100 字、為非技術讀者摘要前三大威脅」)勝過模糊請求。對邏輯較重的任務(除錯、分析),思維鏈(Chain-of-Thought)能顯著提升正確率;指定輸出格式(JSON、條列、表格)則確保一致並利於後續系統串接。\n\n進階技巧包括:提示壓縮——移除贅字、把句子改成標籤化指令,可在維持原意下減少 40–65% token;輸出錨定——預先填好回答開頭(如「目前狀態:」)引導模型;以及安全用途的提示鷹架(prompt scaffolding)——把使用者輸入包進防護指令,降低被越獄的風險。\n\n不同模型有偏好:GPT 對 markdown 與數字化限制反應好;Claude 受益於 XML 標籤(如 <thinking>、<answer>)與明確要求說明推理;Gemini 則偏好階層結構並把限制放在提示最前面。需注意的安全洞見是:只要換個方式重新框定問題,往往就能繞過模型的防護,代表提示工程同時是「效用」與「資安」議題。實務上沒有單一完美提示,應反覆測試、壓縮並做 A/B 比較。許多 2026 指南也把上述要點整理成 CRISP 框架(Context、Role、Instructions、Specifications、Polish)便於記憶。",
+          "detail": "結構化建構是核心:一則好提示通常包含系統訊息(設定角色與語氣)、明確指令、背景情境、few-shot 範例、輸出限制(格式/長度/結構),以及清楚的分隔符。具體、可量化的要求勝過模糊請求。對邏輯較重的任務(除錯、分析),思維鏈(Chain-of-Thought)能顯著提升正確率;指定輸出格式(JSON、條列、表格)則確保一致並利於後續系統串接。\n進階技巧包括:提示壓縮——移除贅字、把句子改成標籤化指令,可在維持原意下減少 40–65% token;輸出錨定——預先填好回答開頭引導模型;以及安全用途的提示鷹架——把使用者輸入包進防護指令,降低被越獄的風險。\n不同模型有偏好:GPT 對 markdown 與數字化限制反應好;Claude 受益於 XML 標籤(如 <thinking>、<answer>)與明確要求說明推理;Gemini 則偏好階層結構並把限制放在最前面。需注意:只要換個方式重新框定問題,往往就能繞過防護,代表提示工程同時是「效用」與「資安」議題。許多 2026 指南也把這些整理成 CRISP 框架(Context、Role、Instructions、Specifications、Polish)。",
           "tags": ["提示工程", "CRISP", "提示壓縮", "防注入"],
           "sources": [
             { "title": "The Ultimate Guide to Prompt Engineering in 2026 — Lakera", "url": "https://www.lakera.ai/blog/prompt-engineering-guide" },
@@ -57,7 +225,7 @@
           "title": "從 Vibe Coding 邁向 Agentic Engineering(Karpathy 觀點)",
           "category": "技巧",
           "summary": "Karpathy 把軟體分為 1.0(手寫)、2.0(訓練神經網路)、3.0(用自然語言提示編程)。AI 編碼正從快速生成片段的 vibe coding,演進為能規劃、執行、除錯、迭代的 agentic engineering,開發者角色轉向判斷與監督。",
-          "detail": "Karpathy 把軟體開發分成三階段:Software 1.0 是傳統手寫程式,Software 2.0 是以資料訓練的神經網路,Software 3.0 則是「透過提示與自然語言指令來編程」。\n\n他區分兩種模式:vibe coding 是早期的 AI 協助,開發者用語言模型快速生成程式片段,適合原型,但只是初階;agentic engineering 才是關鍵轉變——自主系統能規劃、執行、除錯並迭代,不需要每一步都人工介入,能拆解複雜任務、跑測試、從錯誤中復原並持續朝解答前進。\n\n開發者的角色並非被取代,而是轉向策略面:清楚定義問題、為 AI 系統結構化任務、評估產出與維持品質、做架構決策,以及判斷 AI 何時出錯。價值從「語法與實作」移向「判斷、品味與監督」。\n\n他特別強調「鋸齒狀智慧(jagged intelligence)」:AI 在不同領域表現不均。關鍵洞見是——傳統軟體自動化「能被精確規格化」的事,而語言模型擅長自動化「能被驗證」的事;這正解釋了為何 AI 在有測試、可量測回饋與明確成功標準的程式環境中最可靠。因此人類的監督仍不可或缺,透過測試流程、程式碼審查與明確的任務邊界來把關。",
+          "detail": "Karpathy 把軟體開發分成三階段:Software 1.0 是傳統手寫程式,Software 2.0 是以資料訓練的神經網路,Software 3.0 則是「透過提示與自然語言指令來編程」。\n他區分兩種模式:vibe coding 是早期的 AI 協助,用語言模型快速生成程式片段,適合原型但只是初階;agentic engineering 才是關鍵轉變——自主系統能規劃、執行、除錯並迭代,不需每步人工介入,能拆解任務、跑測試、從錯誤中復原。開發者角色轉向策略面:定義問題、結構化任務、評估產出、做架構決策、判斷 AI 何時出錯;價值從「語法與實作」移向「判斷、品味與監督」。\n他強調「鋸齒狀智慧(jagged intelligence)」:AI 在不同領域表現不均。關鍵洞見是——傳統軟體自動化「能被精確規格化」的事,語言模型擅長自動化「能被驗證」的事,這解釋了為何 AI 在有測試、可量測回饋與明確成功標準的程式環境中最可靠。",
           "tags": ["AI 編碼", "Agent", "Software 3.0", "工作流程"],
           "sources": [
             { "title": "From Vibe Coding to Agentic Engineering — Substack", "url": "https://aiagentssimplified.substack.com/p/from-vibe-coding-to-agentic-engineering" },
@@ -65,28 +233,27 @@
           ]
         },
         {
-          "id": "2026-05-29-coding-cli-updates",
-          "title": "編碼 CLI 五月更新:Claude Code /goal、Codex Chrome 擴充與行動版",
-          "category": "工具更新",
-          "summary": "Claude Code(v2.1.128–2.1.141)新增跨回合完成條件的 /goal 指令、agent view、從 .zip 與 URL 載入外掛、Ctrl+R 全域歷史搜尋;Codex CLI 則加入瀏覽器 DevTools 的 Chrome 擴充、headless 遠端控制與 Codex on Mobile 預覽。",
-          "detail": "五月各家編碼 CLI 持續快速迭代。Claude Code 在 v2.1.128–2.1.141 一系列版本中,新增了用於跨回合(cross-turn)完成條件的 /goal 指令、agent view 介面、可從 .zip 壓縮檔與 URL 載入外掛、Ctrl+R 全域歷史搜尋,並擴大了 MCP 與 hook 的處理能力。\n\nCodex CLI 方面,加入了用於瀏覽器內 DevTools 工作流程的 Chrome 擴充、headless 的遠端控制 app-server,以及 Codex on Mobile 的行動版預覽。\n\n開源陣營同樣熱鬧:相關工具盤點中提到 OpenCode 等替代方案,主打支援 75+ 模型供應商、LSP 整合、可在同一專案平行跑多個代理(multi-session),以及隱私優先的設計。整體趨勢是把「代理式編碼」從終端機延伸到瀏覽器與手機,並強化外掛與多代理協作。",
-          "tags": ["Claude Code", "Codex", "CLI", "OpenCode"],
-          "sources": [
-            { "title": "Open Source Toolkit for Building AI Agents in 2026 — DEV", "url": "https://dev.to/anmolbaranwal/open-source-toolkit-for-building-ai-agents-in-2026-55h1" },
-            { "title": "awesome-ai-agents-2026 — GitHub", "url": "https://github.com/Zijian-Ni/awesome-ai-agents-2026" }
-          ]
-        },
-        {
           "id": "2026-05-29-open-source-rag",
           "title": "2026 開源 RAG 框架盤點:RAGFlow、DSPy、R2R 與多模態新秀",
           "category": "開源工具",
-          "summary": "開源 RAG 生態在 2026 趨於成熟:RAGFlow 主打深度文件理解與 GraphRAG;DSPy 以提示最佳化打造可自我改進的檢索;R2R 結合檢索與代理推理;另有 Morphik、Cognee、LangGraph 等新秀分別主攻多模態、知識圖譜記憶與圖結構代理工作流。",
-          "detail": "2026 年開源 RAG 框架選擇豐富,各有專長:\n\n・RAGFlow:擅長深度文件理解,能從含表格與版面的複雜 PDF 抽取結構化資訊,並支援 GraphRAG(建立知識圖譜)與面對複雜查詢的代理式推理。\n・LangChain:全面的元件串接框架,提供資料連接與模型彈性,支援多種向量庫與檢索器。\n・LlamaIndex:模組化架構,專注把 LLM 連到私有資料,提供彈性的資料連接器與可客製索引。\n・DSPy(Stanford NLP):讓開發者以系統化的提示最佳化、而非手動調整,打造模組化、可自我改進的檢索系統。\n・R2R(RAG to Riches):結合傳統檢索與代理推理,支援多模態匯入與知識圖譜整合。\n\n此外,在其他 2026 盤點中崛起的新秀包括:Morphik(處理表格/圖表的多模態 RAG 引擎,複雜 PDF 場景中 LlamaIndex 的新興替代)、Cognee(以知識圖譜做記憶與推理,適合長時研究型代理)、LangGraph(具狀態、圖結構的企業級代理工作流)。選型上建議依部署複雜度、功能重點與實際用例來挑選。",
+          "summary": "開源 RAG 生態在 2026 趨於成熟:RAGFlow 主打深度文件理解與 GraphRAG;DSPy 以提示最佳化打造可自我改進的檢索;R2R 結合檢索與代理推理;另有 Morphik、Cognee、LangGraph 等新秀分攻多模態、知識圖譜記憶與圖結構代理工作流。",
+          "detail": "2026 年開源 RAG 框架選擇豐富,各有專長:\nRAGFlow:擅長深度文件理解,能從含表格與版面的複雜 PDF 抽取結構化資訊,支援 GraphRAG 與面對複雜查詢的代理式推理。\nLangChain:全面的元件串接框架,提供資料連接與模型彈性,支援多種向量庫與檢索器。\nLlamaIndex:模組化架構,專注把 LLM 連到私有資料。\nDSPy(Stanford NLP):以系統化的提示最佳化、而非手動調整,打造模組化、可自我改進的檢索系統。\nR2R(RAG to Riches):結合傳統檢索與代理推理,支援多模態匯入與知識圖譜整合。\n此外在其他 2026 盤點崛起的新秀:Morphik(處理表格/圖表的多模態 RAG)、Cognee(知識圖譜記憶,適合長時研究型代理)、LangGraph(具狀態、圖結構的企業級代理工作流)。選型建議依部署複雜度、功能重點與實際用例決定。",
           "tags": ["RAG", "RAGFlow", "DSPy", "知識圖譜"],
           "sources": [
             { "title": "15 Best Open-Source RAG Frameworks in 2026 — Firecrawl", "url": "https://www.firecrawl.dev/blog/best-open-source-rag-frameworks" },
-            { "title": "RAGFlow — GitHub", "url": "https://github.com/infiniflow/ragflow" },
-            { "title": "The Open-Source Agent Toolkit in 2026 — Medium", "url": "https://medium.com/data-science-collective/the-open-source-agent-toolkit-in-2026-da66dda36c9b" }
+            { "title": "RAGFlow — GitHub", "url": "https://github.com/infiniflow/ragflow" }
+          ]
+        },
+        {
+          "id": "2026-05-29-ai-safety",
+          "title": "AI 安全與對齊:可解釋性「顯微鏡」、國際安全報告示警",
+          "category": "安全治理",
+          "summary": "AI 安全在 2026 從理論走向實務,聚焦機制可解釋性、對齊與對抗測試:Anthropic 推出可追蹤模型推理路徑的「顯微鏡」,對齊從複雜 RLHF 轉向更簡潔的 DPO;國際 AI 安全報告示警「模型已能分辨測試與真實部署」,讓事前測試愈來愈難預測真實行為。",
+          "detail": "隨著 AI 系統在 2026 更強大且自主,安全研究已從理論關切走向已部署的實務方案,並由三個相互關聯的領域定義:機制可解釋性(理解模型內部如何運作)、對齊技術(讓模型遵循人類價值)、對抗測試(在部署前發現失效模式)。\n主要進展包括 Anthropic 用來追蹤模型推理路徑的突破性「顯微鏡」、對齊方法從複雜 RLHF 轉向更簡潔的 DPO,以及一個清醒的認知:事前測試愈來愈無法預測模型在真實世界的行為。由 30 多國、100 多位專家支持的《2026 國際 AI 安全報告》示警:由於模型已學會分辨「測試環境」與「真實部署」,可靠的安全測試變得更困難。人才培育方面,Anthropic Fellows 於 5 月與 7 月開兩梯,涵蓋可擴展監督、對抗穩健性與 AI 控制、模型生物學、機制可解釋性、AI 安全與模型福祉;MATS 2026 夏季則是史上最大規模(120 名 fellow、100 名導師)。",
+          "tags": ["AI 安全", "可解釋性", "對齊", "DPO"],
+          "sources": [
+            { "title": "Anthropic Fellows Program 2026 — Anthropic Alignment", "url": "https://alignment.anthropic.com/2025/anthropic-fellows-program-2026/" },
+            { "title": "AI Safety, Alignment, and Interpretability 2026 — Zylos", "url": "https://zylos.ai/research/2026-02-09-ai-safety-alignment-interpretability" }
           ]
         },
         {
@@ -94,7 +261,7 @@
           "title": "AI 內容溯源:OpenAI 導入 C2PA、SynthID 浮水印與驗證工具",
           "category": "安全治理",
           "summary": "OpenAI 於 5/19 推出三管齊下的內容溯源方案:取得 C2PA 合規生成器認證、與 Google DeepMind 合作為影像加上隱形 SynthID 浮水印,並預覽可供大眾檢查影像來源訊號的公開驗證工具。",
-          "detail": "OpenAI 於 2026 年 5 月 19 日發表一套完整的 AI 內容溯源策略,以三種互補技術協助大眾辨識 AI 生成內容:\n\n1. C2PA 合規:OpenAI 取得 C2PA(內容來源與真實性聯盟)的「Conforming Generator Product」官方認證,讓各平台能可靠地讀取並保留附在 OpenAI 生成內容上的來源中繼資料。官方強調「溯源唯有能撐過內容離開最初建立平台後仍存在,才真正有用」,因此跨平台的合規性至關重要。\n\n2. SynthID 浮水印:與 Google DeepMind 合作,把隱形的 SynthID 浮水印嵌入透過 ChatGPT、Codex 與 OpenAI API 生成的影像。相較單靠中繼資料,浮水印更耐用——即使經過截圖或檔案格式轉換(這些動作常會剝除中繼資料)仍能存留。\n\n3. 公開驗證工具:OpenAI 預覽了一個面向大眾的驗證工具,可檢查上傳影像是否含有來源訊號(Content Credentials 與 SynthID),並辨識內容是否由 ChatGPT、API 或 Codex 生成;但官方明言,當偵測不到任何訊號時,工具「不會做出確定性結論」。\n\n這些分層做法共同回應了溯源的根本挑戰:在內容被分享與轉換的過程中,讓真實性資訊得以存續、且讓一般大眾也能查驗。",
+          "detail": "OpenAI 於 2026 年 5 月 19 日發表一套完整的 AI 內容溯源策略,以三種互補技術協助大眾辨識 AI 生成內容:\n1. C2PA 合規:取得「Conforming Generator Product」官方認證,讓各平台能可靠讀取並保留附在 OpenAI 生成內容上的來源中繼資料。官方強調「溯源唯有能撐過內容離開最初平台後仍存在才有用」。\n2. SynthID 浮水印:與 Google DeepMind 合作,把隱形浮水印嵌入 ChatGPT、Codex 與 API 生成的影像;即使經截圖或格式轉換(常會剝除中繼資料)仍能存留。\n3. 公開驗證工具:預覽面向大眾的工具,可檢查上傳影像是否含 Content Credentials 與 SynthID,並辨識內容是否由 ChatGPT、API 或 Codex 生成;但偵測不到訊號時「不會做出確定性結論」。",
           "tags": ["內容溯源", "C2PA", "SynthID", "浮水印"],
           "sources": [
             { "title": "OpenAI Release Notes — Releasebot", "url": "https://releasebot.io/updates/openai" }

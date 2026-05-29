@@ -12,6 +12,13 @@ const CATEGORY_STYLES: Record<string, string> = {
   安全治理: "bg-slate-200 text-slate-800 dark:bg-slate-800 dark:text-slate-300",
   研究突破: "bg-cyan-100 text-cyan-800 dark:bg-cyan-950 dark:text-cyan-300",
   產業動態: "bg-orange-100 text-orange-800 dark:bg-orange-950 dark:text-orange-300",
+  影音生成: "bg-pink-100 text-pink-800 dark:bg-pink-950 dark:text-pink-300",
+  硬體晶片: "bg-lime-100 text-lime-800 dark:bg-lime-950 dark:text-lime-300",
+  機器人: "bg-teal-100 text-teal-800 dark:bg-teal-950 dark:text-teal-300",
+  募資併購: "bg-yellow-100 text-yellow-800 dark:bg-yellow-950 dark:text-yellow-300",
+  法規政策: "bg-red-100 text-red-800 dark:bg-red-950 dark:text-red-300",
+  企業應用: "bg-indigo-100 text-indigo-800 dark:bg-indigo-950 dark:text-indigo-300",
+  醫療科學: "bg-green-100 text-green-800 dark:bg-green-950 dark:text-green-300",
 };
 
 function categoryClass(category: string): string {

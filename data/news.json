@@ -1,26 +1,28 @@
 {
-  "lastUpdated": "2026-05-29T07:00:00+08:00",
+  "lastUpdated": "2026-05-29T22:45:00+08:00",
   "days": [
     {
       "date": "2026-05-29",
       "topics": [
         {
-          "id": "2026-05-29-gpt55-instant",
-          "title": "GPT-5.5 Instant 成為 ChatGPT 新預設模型",
+          "id": "2026-05-29-gpt55-default-shuffle",
+          "title": "GPT-5.5 與五月預設模型大洗牌",
           "category": "模型發布",
-          "summary": "OpenAI 於 5 月 5 日將 ChatGPT 預設模型更新為 GPT-5.5 Instant,取代原本的 GPT-5.3 Instant。新模型針對快速對話與日常推理進行調校,強調更低延遲與更穩定的回應品質,是本月各大模型「精修既有家族」趨勢的代表。",
-          "tags": ["OpenAI", "ChatGPT", "GPT-5.5"],
+          "summary": "OpenAI GPT-5.5 於 4 月底登場;進入五月,各平台預設模型出現連鎖更換——GitHub 改用 GPT-5.3-Codex、Google Gemini App 改以 Gemini 3.5 Flash 為預設。本月主旋律是「精修既有家族 + 平台層級換預設」,而非全新前沿模型。",
+          "detail": "GPT-5.5 於 2026 年 4 月 23 日推出。根據模型發布追蹤資料,它在 SWE-Bench Verified 上拿下 88.7% 的分數(指數 101.3),些微領先 Opus 4.7 的基準,定位在程式撰寫與日常推理。\n\n值得開發者注意的是它的「長上下文加價」收費結構:基礎價為每百萬 token 輸入 5 美元、輸出 30 美元;但只要單一提示的輸入超過 272K token,整個工作階段(session)的輸入會以 2 倍、輸出以 1.5 倍計價。換句話說,一旦觸發長上下文,整次任務的有效成本可能直接翻倍(範例中從 1.10 美元升到 2.20 美元),是容易被忽略的隱藏成本。\n\n進入五月,真正的變化發生在「預設模型」層級而非全新旗艦:GitHub Business/Enterprise 於 5 月 17 日把預設改為 GPT-5.3-Codex;Google 的 Gemini App 則於 5 月 19 日把預設換成輕量高速的 Gemini 3.5 Flash。整體來看,2026 年五月各家以精修既有模型家族、調整定價與平台預設為主,前沿級的全新模型反而按兵不動。",
+          "tags": ["OpenAI", "GPT-5.5", "預設模型", "定價"],
           "sources": [
-            { "title": "OpenAI Release Notes — Releasebot", "url": "https://releasebot.io/updates/openai" },
-            { "title": "AI Model Releases May 2026 Tracker — Digital Applied", "url": "https://www.digitalapplied.com/blog/ai-model-releases-may-2026-complete-tracker" }
+            { "title": "AI Model Releases May 2026 Tracker — Digital Applied", "url": "https://www.digitalapplied.com/blog/ai-model-releases-may-2026-complete-tracker" },
+            { "title": "AI Updates Today (May 2026) — LLM-Stats", "url": "https://llm-stats.com/llm-updates" }
           ]
         },
         {
           "id": "2026-05-29-google-io-2026",
-          "title": "Google I/O 2026:Gemini 3.5、Antigravity 2.0、Spark 與 Omni 登場",
+          "title": "Google I/O 2026:Gemini 3.5 Flash 上線、Spark 支援 MCP",
           "category": "模型發布",
-          "summary": "Google I/O 2026 一口氣發表 Gemini 3.5、開發環境 Antigravity 2.0、Gemini Spark、Omni 以及搜尋體驗大改版。輕量版 Gemini 3.5 Flash 主打速度與低成本推論,延續 Google 在多模態與端到端整合上的布局。",
-          "tags": ["Google", "Gemini 3.5", "多模態"],
+          "summary": "Google I/O 2026 於 5/19 主題演講登場,聚焦 Gemini 家族:輕量高速的 Gemini 3.5 Flash 於 5/25 正式上線並接入 Adobe、Canva、CapCut;Gemini Spark 將支援 MCP 串接第三方 App,並預覽 Android XR 眼鏡。",
+          "detail": "Google I/O 2026 的主題演講於 5 月 19 日舉行,5 月 20 日為開發者技術場次。會中預期在 keynote 發表 Gemini 4.0(細節著墨不多),但真正落地的重點是 Gemini 家族的輕量版本與生態整合。\n\nGemini 3.5 Flash 於 5 月 25 日正式上線(GA),定價為每百萬 token 輸入 1.50 美元、輸出 9 美元,主打速度與低成本推論;同時宣布 Adobe、Canva、CapCut 等夥伴將整合 Gemini。\n\nGemini Spark 方面,Google 表示將在數週內支援 MCP(Model Context Protocol),讓第三方 App 能串接;Canva 的 Magic Layers 整合已進入 beta。此外還預覽了 Android XR 智慧眼鏡,並預告 Aluminium OS 的細節。整體方向延續 Google 在多模態、端到端整合與開放協定(MCP)上的布局。",
+          "tags": ["Google", "Gemini 3.5 Flash", "MCP", "Android XR"],
           "sources": [
             { "title": "AI News May 2026 — AIToolsRecap", "url": "https://aitoolsrecap.com/Blog/MayNews2026.aspx" },
             { "title": "New AI Models May 2026 — WhatLLM", "url": "https://whatllm.org/blog/new-ai-models-may-2026" }
@@ -28,33 +30,35 @@
         },
         {
           "id": "2026-05-29-subq-subquadratic",
-          "title": "SubQ 1M-Preview:首個商用次二次方 LLM,支援 12M token 上下文",
+          "title": "SubQ 1M-Preview:首個商用次二次方 LLM,12M token 上下文",
           "category": "架構創新",
-          "summary": "新創 Subquadratic 於 5 月 5 日推出首個商用「次二次方 (subquadratic)」架構大型語言模型 SubQ,號稱可處理高達 1,200 萬 token 的超長上下文。此架構試圖突破 Transformer 注意力的二次方運算瓶頸,被視為本月最受矚目的架構級創新。",
-          "tags": ["架構", "長上下文", "Subquadratic"],
+          "summary": "新創 Subquadratic 於 5/5 推出首個商用「次二次方(subquadratic)」架構大型語言模型 SubQ,原生支援 1,200 萬 token 上下文,試圖突破 Transformer 注意力 O(n²) 的運算瓶頸。",
+          "detail": "Subquadratic 公司於 2026 年 5 月 5 日推出 SubQ,並完成 2,900 萬美元種子輪募資。它號稱是第一個商用、採「次二次方稀疏注意力(subquadratic sparse attention)」而非標準 Transformer 的大型語言模型——重點在於標準 Transformer 的注意力運算量是上下文長度的 O(n²),長上下文時成本急速攀升。\n\n規格上,SubQ 原生支援 1,200 萬 token 的上下文視窗;官方宣稱在長上下文任務上成本約為前沿模型的 1/5,注意力在大規模時最高可快 52 倍。不過這些都是廠商自家數字,尚未經第三方在 MRCR、RULER 等標準基準上獨立驗證。\n\n產品包含 API 以及 SubQ Code(可利用完整上下文的全 repo 程式代理),主打 repo 級程式碼分析、長文件處理與多文件研究。技術上,它延續了 Mamba、RWKV、Hyena、BASED 等先前曾在對抗前沿 Transformer 時遇到瓶頸的研究路線,因此「能否真正商用站穩」會是後續最關鍵的觀察點。",
+          "tags": ["架構", "長上下文", "Subquadratic", "稀疏注意力"],
           "sources": [
             { "title": "New AI Models May 2026 — WhatLLM", "url": "https://whatllm.org/blog/new-ai-models-may-2026" },
             { "title": "New AI Model Releases (Startup Edition) — mean.ceo", "url": "https://blog.mean.ceo/new-ai-model-releases-news-may-2026/" }
           ]
         },
         {
-          "id": "2026-05-29-prompt-engineering-crisp",
-          "title": "2026 提示工程:CRISP 框架與「情境工程」成主流",
+          "id": "2026-05-29-prompt-engineering-2026",
+          "title": "2026 提示工程實戰:結構化提示、壓縮與安全防護",
           "category": "技巧",
-          "summary": "業界整理出 CRISP 框架(Context、Role、Instructions、Specifications、Polish):每則提示先建立技術環境(語言、框架、架構)讓模型理解何謂「好程式碼」。重點觀念是把 LLM 當 CPU、上下文視窗當 RAM——精準載入需要的程式與資料。實測顯示 few-shot 可提升約 40% 準確率,而推理品質約在 3,000 token 後開始下滑,多數任務的甜蜜點落在 150–300 字。",
-          "tags": ["提示工程", "情境工程", "Few-shot"],
+          "summary": "2026 的提示工程強調結構化建構(系統訊息+指令+情境+範例+輸出限制+分隔符)、思維鏈,以及進階的提示壓縮、輸出錨定與防注入防護;不同模型也有各自偏好的格式。",
+          "detail": "結構化建構是核心:一則好提示通常包含系統訊息(設定角色與語氣)、明確指令、背景情境、few-shot 範例、輸出限制(格式/長度/結構),以及清楚的分隔符。具體、可量化的要求(例如「用 100 字、為非技術讀者摘要前三大威脅」)勝過模糊請求。對邏輯較重的任務(除錯、分析),思維鏈(Chain-of-Thought)能顯著提升正確率;指定輸出格式(JSON、條列、表格)則確保一致並利於後續系統串接。\n\n進階技巧包括:提示壓縮——移除贅字、把句子改成標籤化指令,可在維持原意下減少 40–65% token;輸出錨定——預先填好回答開頭(如「目前狀態:」)引導模型;以及安全用途的提示鷹架(prompt scaffolding)——把使用者輸入包進防護指令,降低被越獄的風險。\n\n不同模型有偏好:GPT 對 markdown 與數字化限制反應好;Claude 受益於 XML 標籤(如 <thinking>、<answer>)與明確要求說明推理;Gemini 則偏好階層結構並把限制放在提示最前面。需注意的安全洞見是:只要換個方式重新框定問題,往往就能繞過模型的防護,代表提示工程同時是「效用」與「資安」議題。實務上沒有單一完美提示,應反覆測試、壓縮並做 A/B 比較。許多 2026 指南也把上述要點整理成 CRISP 框架(Context、Role、Instructions、Specifications、Polish)便於記憶。",
+          "tags": ["提示工程", "CRISP", "提示壓縮", "防注入"],
           "sources": [
             { "title": "The Ultimate Guide to Prompt Engineering in 2026 — Lakera", "url": "https://www.lakera.ai/blog/prompt-engineering-guide" },
-            { "title": "The 2026 Guide to Prompt Engineering — IBM", "url": "https://www.ibm.com/think/prompt-engineering" },
-            { "title": "Prompt Engineering for Developers — DEV", "url": "https://dev.to/iniyarajan86/prompt-engineering-for-developers-10x-your-ai-coding-in-2026-8d6" }
+            { "title": "The 2026 Guide to Prompt Engineering — IBM", "url": "https://www.ibm.com/think/prompt-engineering" }
           ]
         },
         {
           "id": "2026-05-29-agentic-engineering",
           "title": "從 Vibe Coding 邁向 Agentic Engineering(Karpathy 觀點)",
           "category": "技巧",
-          "summary": "AI 編碼工具正從「自動補全助手」演進為能規劃、執行、除錯並反覆迭代的代理系統。核心轉變是 agentic engineering:讓 AI 拆解任務、使用工具、跑測試、從錯誤中復原,並朝目標持續迭代。對開發者而言,重點從「寫對提示」轉為「設計可驗證的工作流程」。",
-          "tags": ["AI 編碼", "Agent", "工作流程"],
+          "summary": "Karpathy 把軟體分為 1.0(手寫)、2.0(訓練神經網路)、3.0(用自然語言提示編程)。AI 編碼正從快速生成片段的 vibe coding,演進為能規劃、執行、除錯、迭代的 agentic engineering,開發者角色轉向判斷與監督。",
+          "detail": "Karpathy 把軟體開發分成三階段:Software 1.0 是傳統手寫程式,Software 2.0 是以資料訓練的神經網路,Software 3.0 則是「透過提示與自然語言指令來編程」。\n\n他區分兩種模式:vibe coding 是早期的 AI 協助,開發者用語言模型快速生成程式片段,適合原型,但只是初階;agentic engineering 才是關鍵轉變——自主系統能規劃、執行、除錯並迭代,不需要每一步都人工介入,能拆解複雜任務、跑測試、從錯誤中復原並持續朝解答前進。\n\n開發者的角色並非被取代,而是轉向策略面:清楚定義問題、為 AI 系統結構化任務、評估產出與維持品質、做架構決策,以及判斷 AI 何時出錯。價值從「語法與實作」移向「判斷、品味與監督」。\n\n他特別強調「鋸齒狀智慧(jagged intelligence)」:AI 在不同領域表現不均。關鍵洞見是——傳統軟體自動化「能被精確規格化」的事,而語言模型擅長自動化「能被驗證」的事;這正解釋了為何 AI 在有測試、可量測回饋與明確成功標準的程式環境中最可靠。因此人類的監督仍不可或缺,透過測試流程、程式碼審查與明確的任務邊界來把關。",
+          "tags": ["AI 編碼", "Agent", "Software 3.0", "工作流程"],
           "sources": [
             { "title": "From Vibe Coding to Agentic Engineering — Substack", "url": "https://aiagentssimplified.substack.com/p/from-vibe-coding-to-agentic-engineering" },
             { "title": "Prompt Engineering in 2026: Advanced Techniques — DEV", "url": "https://dev.to/lufumeiying/prompt-engineering-in-2026-advanced-techniques-for-better-ai-results-2o52" }
@@ -64,8 +68,9 @@
           "id": "2026-05-29-coding-cli-updates",
           "title": "編碼 CLI 五月更新:Claude Code /goal、Codex Chrome 擴充與行動版",
           "category": "工具更新",
-          "summary": "Claude Code(v2.1.128–2.1.141)新增跨回合完成條件的 /goal 指令、agent view、從 .zip 與 URL 載入外掛、Ctrl+R 全域歷史搜尋,並強化 MCP/hook 處理。Codex CLI 則加入瀏覽器 DevTools 工作流程的 Chrome 擴充、headless 遠端控制 app-server,以及 Codex on Mobile 預覽。",
-          "tags": ["Claude Code", "Codex", "CLI"],
+          "summary": "Claude Code(v2.1.128–2.1.141)新增跨回合完成條件的 /goal 指令、agent view、從 .zip 與 URL 載入外掛、Ctrl+R 全域歷史搜尋;Codex CLI 則加入瀏覽器 DevTools 的 Chrome 擴充、headless 遠端控制與 Codex on Mobile 預覽。",
+          "detail": "五月各家編碼 CLI 持續快速迭代。Claude Code 在 v2.1.128–2.1.141 一系列版本中,新增了用於跨回合(cross-turn)完成條件的 /goal 指令、agent view 介面、可從 .zip 壓縮檔與 URL 載入外掛、Ctrl+R 全域歷史搜尋,並擴大了 MCP 與 hook 的處理能力。\n\nCodex CLI 方面,加入了用於瀏覽器內 DevTools 工作流程的 Chrome 擴充、headless 的遠端控制 app-server,以及 Codex on Mobile 的行動版預覽。\n\n開源陣營同樣熱鬧:相關工具盤點中提到 OpenCode 等替代方案,主打支援 75+ 模型供應商、LSP 整合、可在同一專案平行跑多個代理(multi-session),以及隱私優先的設計。整體趨勢是把「代理式編碼」從終端機延伸到瀏覽器與手機,並強化外掛與多代理協作。",
+          "tags": ["Claude Code", "Codex", "CLI", "OpenCode"],
           "sources": [
             { "title": "Open Source Toolkit for Building AI Agents in 2026 — DEV", "url": "https://dev.to/anmolbaranwal/open-source-toolkit-for-building-ai-agents-in-2026-55h1" },
             { "title": "awesome-ai-agents-2026 — GitHub", "url": "https://github.com/Zijian-Ni/awesome-ai-agents-2026" }
@@ -73,10 +78,11 @@
         },
         {
           "id": "2026-05-29-open-source-rag",
-          "title": "2026 開源 RAG 框架盤點:Morphik、Cognee、RAGFlow、LangGraph",
+          "title": "2026 開源 RAG 框架盤點:RAGFlow、DSPy、R2R 與多模態新秀",
           "category": "開源工具",
-          "summary": "開源 RAG 生態在 2026 趨於成熟:Morphik 為處理表格/圖表的多模態 RAG 引擎,成為複雜 PDF 場景中 LlamaIndex 的新興替代;Cognee 以知識圖譜做記憶+推理,適合長時研究型代理;RAGFlow 主打深度文件理解;LangGraph 提供具狀態、圖結構的企業級代理工作流。",
-          "tags": ["RAG", "開源", "知識圖譜"],
+          "summary": "開源 RAG 生態在 2026 趨於成熟:RAGFlow 主打深度文件理解與 GraphRAG;DSPy 以提示最佳化打造可自我改進的檢索;R2R 結合檢索與代理推理;另有 Morphik、Cognee、LangGraph 等新秀分別主攻多模態、知識圖譜記憶與圖結構代理工作流。",
+          "detail": "2026 年開源 RAG 框架選擇豐富,各有專長:\n\n・RAGFlow:擅長深度文件理解,能從含表格與版面的複雜 PDF 抽取結構化資訊,並支援 GraphRAG(建立知識圖譜)與面對複雜查詢的代理式推理。\n・LangChain:全面的元件串接框架,提供資料連接與模型彈性,支援多種向量庫與檢索器。\n・LlamaIndex:模組化架構,專注把 LLM 連到私有資料,提供彈性的資料連接器與可客製索引。\n・DSPy(Stanford NLP):讓開發者以系統化的提示最佳化、而非手動調整,打造模組化、可自我改進的檢索系統。\n・R2R(RAG to Riches):結合傳統檢索與代理推理,支援多模態匯入與知識圖譜整合。\n\n此外,在其他 2026 盤點中崛起的新秀包括:Morphik(處理表格/圖表的多模態 RAG 引擎,複雜 PDF 場景中 LlamaIndex 的新興替代)、Cognee(以知識圖譜做記憶與推理,適合長時研究型代理)、LangGraph(具狀態、圖結構的企業級代理工作流)。選型上建議依部署複雜度、功能重點與實際用例來挑選。",
+          "tags": ["RAG", "RAGFlow", "DSPy", "知識圖譜"],
           "sources": [
             { "title": "15 Best Open-Source RAG Frameworks in 2026 — Firecrawl", "url": "https://www.firecrawl.dev/blog/best-open-source-rag-frameworks" },
             { "title": "RAGFlow — GitHub", "url": "https://github.com/infiniflow/ragflow" },
@@ -85,10 +91,11 @@
         },
         {
           "id": "2026-05-29-content-provenance",
-          "title": "AI 內容溯源:OpenAI 導入 C2PA 與 SynthID 影像浮水印",
+          "title": "AI 內容溯源:OpenAI 導入 C2PA、SynthID 浮水印與驗證工具",
           "category": "安全治理",
-          "summary": "OpenAI 於 5 月 20 日強化 AI 內容溯源:符合 C2PA 規範、對影像加上 SynthID 浮水印,並預覽公開的內容驗證工具。在生成內容真偽日益難辨的當下,溯源與浮水印成為各大廠在治理與信任面的重點投資。",
-          "tags": ["內容溯源", "C2PA", "SynthID"],
+          "summary": "OpenAI 於 5/19 推出三管齊下的內容溯源方案:取得 C2PA 合規生成器認證、與 Google DeepMind 合作為影像加上隱形 SynthID 浮水印,並預覽可供大眾檢查影像來源訊號的公開驗證工具。",
+          "detail": "OpenAI 於 2026 年 5 月 19 日發表一套完整的 AI 內容溯源策略,以三種互補技術協助大眾辨識 AI 生成內容:\n\n1. C2PA 合規:OpenAI 取得 C2PA(內容來源與真實性聯盟)的「Conforming Generator Product」官方認證,讓各平台能可靠地讀取並保留附在 OpenAI 生成內容上的來源中繼資料。官方強調「溯源唯有能撐過內容離開最初建立平台後仍存在,才真正有用」,因此跨平台的合規性至關重要。\n\n2. SynthID 浮水印:與 Google DeepMind 合作,把隱形的 SynthID 浮水印嵌入透過 ChatGPT、Codex 與 OpenAI API 生成的影像。相較單靠中繼資料,浮水印更耐用——即使經過截圖或檔案格式轉換(這些動作常會剝除中繼資料)仍能存留。\n\n3. 公開驗證工具:OpenAI 預覽了一個面向大眾的驗證工具,可檢查上傳影像是否含有來源訊號(Content Credentials 與 SynthID),並辨識內容是否由 ChatGPT、API 或 Codex 生成;但官方明言,當偵測不到任何訊號時,工具「不會做出確定性結論」。\n\n這些分層做法共同回應了溯源的根本挑戰:在內容被分享與轉換的過程中,讓真實性資訊得以存續、且讓一般大眾也能查驗。",
+          "tags": ["內容溯源", "C2PA", "SynthID", "浮水印"],
           "sources": [
             { "title": "OpenAI Release Notes — Releasebot", "url": "https://releasebot.io/updates/openai" }
           ]

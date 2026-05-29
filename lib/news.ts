@@ -1,5 +1,4 @@
-import fs from "node:fs";
-import path from "node:path";
+import newsJson from "@/data/news.json";
 
 export interface Source {
   /** 來源標題,例如媒體或部落格名稱 */
@@ -15,8 +14,10 @@ export interface Topic {
   title: string;
   /** 分類,例如「模型發布」「技巧」「開源工具」 */
   category: string;
-  /** 繁體中文摘要 */
+  /** 繁體中文短摘要 (卡片上顯示) */
   summary: string;
+  /** 繁體中文完整內容 (彈窗中顯示,段落以換行分隔) */
+  detail: string;
   /** 關鍵字標籤 */
   tags: string[];
   /** 一或多個來源連結 */
@@ -36,26 +37,10 @@ export interface NewsData {
   days: NewsDay[];
 }
 
-const DATA_PATH = path.join(process.cwd(), "data", "news.json");
-
-/** 讀取 data/news.json。檔案不存在或解析失敗時回傳空資料。 */
+/** 讀取 data/news.json (建置時靜態載入,每次 git push 重建會帶入最新內容)。 */
 export function getNews(): NewsData {
-  try {
-    const raw = fs.readFileSync(DATA_PATH, "utf-8");
-    const data = JSON.parse(raw) as NewsData;
-    // 確保由新到舊排序
-    data.days.sort((a, b) => b.date.localeCompare(a.date));
-    return data;
-  } catch {
-    return { lastUpdated: "", days: [] };
-  }
-}
-
-/** 所有出現過的分類 (依出現頻率) */
-export function getCategories(data: NewsData): string[] {
-  const seen = new Set<string>();
-  for (const day of data.days) {
-    for (const topic of day.topics) seen.add(topic.category);
-  }
-  return [...seen];
+  const data = newsJson as NewsData;
+  // 回傳前複製並由新到舊排序,避免變動模組快取
+  const days = [...data.days].sort((a, b) => b.date.localeCompare(a.date));
+  return { lastUpdated: data.lastUpdated, days };
 }

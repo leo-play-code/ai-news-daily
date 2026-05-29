@@ -1,0 +1,99 @@
+{
+  "lastUpdated": "2026-05-29T07:00:00+08:00",
+  "days": [
+    {
+      "date": "2026-05-29",
+      "topics": [
+        {
+          "id": "2026-05-29-gpt55-instant",
+          "title": "GPT-5.5 Instant 成為 ChatGPT 新預設模型",
+          "category": "模型發布",
+          "summary": "OpenAI 於 5 月 5 日將 ChatGPT 預設模型更新為 GPT-5.5 Instant,取代原本的 GPT-5.3 Instant。新模型針對快速對話與日常推理進行調校,強調更低延遲與更穩定的回應品質,是本月各大模型「精修既有家族」趨勢的代表。",
+          "tags": ["OpenAI", "ChatGPT", "GPT-5.5"],
+          "sources": [
+            { "title": "OpenAI Release Notes — Releasebot", "url": "https://releasebot.io/updates/openai" },
+            { "title": "AI Model Releases May 2026 Tracker — Digital Applied", "url": "https://www.digitalapplied.com/blog/ai-model-releases-may-2026-complete-tracker" }
+          ]
+        },
+        {
+          "id": "2026-05-29-google-io-2026",
+          "title": "Google I/O 2026:Gemini 3.5、Antigravity 2.0、Spark 與 Omni 登場",
+          "category": "模型發布",
+          "summary": "Google I/O 2026 一口氣發表 Gemini 3.5、開發環境 Antigravity 2.0、Gemini Spark、Omni 以及搜尋體驗大改版。輕量版 Gemini 3.5 Flash 主打速度與低成本推論,延續 Google 在多模態與端到端整合上的布局。",
+          "tags": ["Google", "Gemini 3.5", "多模態"],
+          "sources": [
+            { "title": "AI News May 2026 — AIToolsRecap", "url": "https://aitoolsrecap.com/Blog/MayNews2026.aspx" },
+            { "title": "New AI Models May 2026 — WhatLLM", "url": "https://whatllm.org/blog/new-ai-models-may-2026" }
+          ]
+        },
+        {
+          "id": "2026-05-29-subq-subquadratic",
+          "title": "SubQ 1M-Preview:首個商用次二次方 LLM,支援 12M token 上下文",
+          "category": "架構創新",
+          "summary": "新創 Subquadratic 於 5 月 5 日推出首個商用「次二次方 (subquadratic)」架構大型語言模型 SubQ,號稱可處理高達 1,200 萬 token 的超長上下文。此架構試圖突破 Transformer 注意力的二次方運算瓶頸,被視為本月最受矚目的架構級創新。",
+          "tags": ["架構", "長上下文", "Subquadratic"],
+          "sources": [
+            { "title": "New AI Models May 2026 — WhatLLM", "url": "https://whatllm.org/blog/new-ai-models-may-2026" },
+            { "title": "New AI Model Releases (Startup Edition) — mean.ceo", "url": "https://blog.mean.ceo/new-ai-model-releases-news-may-2026/" }
+          ]
+        },
+        {
+          "id": "2026-05-29-prompt-engineering-crisp",
+          "title": "2026 提示工程:CRISP 框架與「情境工程」成主流",
+          "category": "技巧",
+          "summary": "業界整理出 CRISP 框架(Context、Role、Instructions、Specifications、Polish):每則提示先建立技術環境(語言、框架、架構)讓模型理解何謂「好程式碼」。重點觀念是把 LLM 當 CPU、上下文視窗當 RAM——精準載入需要的程式與資料。實測顯示 few-shot 可提升約 40% 準確率,而推理品質約在 3,000 token 後開始下滑,多數任務的甜蜜點落在 150–300 字。",
+          "tags": ["提示工程", "情境工程", "Few-shot"],
+          "sources": [
+            { "title": "The Ultimate Guide to Prompt Engineering in 2026 — Lakera", "url": "https://www.lakera.ai/blog/prompt-engineering-guide" },
+            { "title": "The 2026 Guide to Prompt Engineering — IBM", "url": "https://www.ibm.com/think/prompt-engineering" },
+            { "title": "Prompt Engineering for Developers — DEV", "url": "https://dev.to/iniyarajan86/prompt-engineering-for-developers-10x-your-ai-coding-in-2026-8d6" }
+          ]
+        },
+        {
+          "id": "2026-05-29-agentic-engineering",
+          "title": "從 Vibe Coding 邁向 Agentic Engineering(Karpathy 觀點)",
+          "category": "技巧",
+          "summary": "AI 編碼工具正從「自動補全助手」演進為能規劃、執行、除錯並反覆迭代的代理系統。核心轉變是 agentic engineering:讓 AI 拆解任務、使用工具、跑測試、從錯誤中復原,並朝目標持續迭代。對開發者而言,重點從「寫對提示」轉為「設計可驗證的工作流程」。",
+          "tags": ["AI 編碼", "Agent", "工作流程"],
+          "sources": [
+            { "title": "From Vibe Coding to Agentic Engineering — Substack", "url": "https://aiagentssimplified.substack.com/p/from-vibe-coding-to-agentic-engineering" },
+            { "title": "Prompt Engineering in 2026: Advanced Techniques — DEV", "url": "https://dev.to/lufumeiying/prompt-engineering-in-2026-advanced-techniques-for-better-ai-results-2o52" }
+          ]
+        },
+        {
+          "id": "2026-05-29-coding-cli-updates",
+          "title": "編碼 CLI 五月更新:Claude Code /goal、Codex Chrome 擴充與行動版",
+          "category": "工具更新",
+          "summary": "Claude Code(v2.1.128–2.1.141)新增跨回合完成條件的 /goal 指令、agent view、從 .zip 與 URL 載入外掛、Ctrl+R 全域歷史搜尋,並強化 MCP/hook 處理。Codex CLI 則加入瀏覽器 DevTools 工作流程的 Chrome 擴充、headless 遠端控制 app-server,以及 Codex on Mobile 預覽。",
+          "tags": ["Claude Code", "Codex", "CLI"],
+          "sources": [
+            { "title": "Open Source Toolkit for Building AI Agents in 2026 — DEV", "url": "https://dev.to/anmolbaranwal/open-source-toolkit-for-building-ai-agents-in-2026-55h1" },
+            { "title": "awesome-ai-agents-2026 — GitHub", "url": "https://github.com/Zijian-Ni/awesome-ai-agents-2026" }
+          ]
+        },
+        {
+          "id": "2026-05-29-open-source-rag",
+          "title": "2026 開源 RAG 框架盤點:Morphik、Cognee、RAGFlow、LangGraph",
+          "category": "開源工具",
+          "summary": "開源 RAG 生態在 2026 趨於成熟:Morphik 為處理表格/圖表的多模態 RAG 引擎,成為複雜 PDF 場景中 LlamaIndex 的新興替代;Cognee 以知識圖譜做記憶+推理,適合長時研究型代理;RAGFlow 主打深度文件理解;LangGraph 提供具狀態、圖結構的企業級代理工作流。",
+          "tags": ["RAG", "開源", "知識圖譜"],
+          "sources": [
+            { "title": "15 Best Open-Source RAG Frameworks in 2026 — Firecrawl", "url": "https://www.firecrawl.dev/blog/best-open-source-rag-frameworks" },
+            { "title": "RAGFlow — GitHub", "url": "https://github.com/infiniflow/ragflow" },
+            { "title": "The Open-Source Agent Toolkit in 2026 — Medium", "url": "https://medium.com/data-science-collective/the-open-source-agent-toolkit-in-2026-da66dda36c9b" }
+          ]
+        },
+        {
+          "id": "2026-05-29-content-provenance",
+          "title": "AI 內容溯源:OpenAI 導入 C2PA 與 SynthID 影像浮水印",
+          "category": "安全治理",
+          "summary": "OpenAI 於 5 月 20 日強化 AI 內容溯源:符合 C2PA 規範、對影像加上 SynthID 浮水印,並預覽公開的內容驗證工具。在生成內容真偽日益難辨的當下,溯源與浮水印成為各大廠在治理與信任面的重點投資。",
+          "tags": ["內容溯源", "C2PA", "SynthID"],
+          "sources": [
+            { "title": "OpenAI Release Notes — Releasebot", "url": "https://releasebot.io/updates/openai" }
+          ]
+        }
+      ]
+    }
+  ]
+}
